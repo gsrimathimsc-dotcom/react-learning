@@ -1,13 +1,63 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tutorial2-app</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>React - With JSX and Without JSX</title>
+  <!-- React and ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!-- Babel: needed only to convert JSX in the browser -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    // ---------- 1. WITHOUT JSX (React.createElement) ----------
+    function WithoutJSX(props) {
+      return React.createElement(
+        "div",
+        { style: { border: "2px solid red", padding: "10px", margin: "10px" } },
+        React.createElement("h2", null, "Without JSX"),
+        React.createElement("p", null, "Hello, " + props.name + "!"),
+        React.createElement(
+          "ul",
+          null,
+          React.createElement("li", null, "HTML"),
+          React.createElement("li", null, "CSS"),
+          React.createElement("li", null, "React")
+        )
+      );
+    }
+
+    // ---------- 2. WITH JSX ----------
+    function WithJSX(props) {
+      return (
+        <div style={{ border: "2px solid green", padding: "10px", margin: "10px" }}>
+          <h2>With JSX</h2>
+          <p>Hello, {props.name}!</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+          </ul>
+        </div>
+      );
+    }
+
+    // ---------- App: uses both components ----------
+    function App() {
+      return (
+        <div>
+          <h1>Hello World - JSX vs createElement</h1>
+          <WithoutJSX name="Srimathi" />
+          <WithJSX name="Srimathi" />
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<App />);
+  </script>
+</body>
 </html>
