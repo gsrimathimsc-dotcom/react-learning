@@ -1,0 +1,21 @@
+.toy-card {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  width: 220px;
+}
+
+.in-stock {
+  border-color: green;
+  background-color: #f0fff0;
+}
+
+.out-of-stock {
+  border-color: red;
+  background-color: #fff0f0;
+  opacity: 0.7;
+}
+
+.featured {
+  box-shadow: 0 0 10px gold;
+}

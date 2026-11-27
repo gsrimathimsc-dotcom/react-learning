@@ -1,67 +1,32 @@
 // App.jsx
-import IfStatementDemo from "./IfStatementDemo";
-import TernaryDemo from "./TernaryDemo";
-import AndOperatorDemo from "./AndOperatorDemo";
-import VariableDemo from "./VariableDemo";
-import SimpleList from "./SimpleList";
-import ProductList from "./ProductList";
-import FilterList from "./FilterList";
-import NestedList from "./NestedList";
-import KeyAntipatternDemo from "./KeyAntipatternDemo";
+import InlineStyle from "./InlineStyle";
+import ExternalCSS from "./ExternalCSS";
+import CSSModule from "./CSSModule";
+import DynamicStyle from "./DynamicStyle";
+
 function App() {
   return (
     <div
       style={{
         fontFamily: "Arial",
         padding: "20px",
-        maxWidth: "700px",
+        maxWidth: "800px",
         margin: "0 auto",
       }}
     >
-      <h1>Tutorial 9 - Conditional Rendering</h1>
+      <h1>Tutorial 12 - Styling React Components</h1>
 
-      <h2>1. if Statement</h2>
-      <IfStatementDemo isLoggedIn={true} name="Srimathi" />
-      <IfStatementDemo isLoggedIn={false} />
+      <h2>1. Inline Styles</h2>
+      <InlineStyle />
 
-      <h2>2. Ternary Operator</h2>
-      <TernaryDemo title="Teddy Bear" price={499} inStock={true} />
-      <TernaryDemo title="Remote Control Car" price={1299} inStock={false} />
+      <h2>2. External CSS File</h2>
+      <ExternalCSS />
 
-      <h2>3. && Operator</h2>
-      <AndOperatorDemo
-        name="Srimathi"
-        isAdmin={true}
-        cartCount={3}
-        discount={10}
-      />
-      <AndOperatorDemo
-        name="Priya"
-        isAdmin={false}
-        cartCount={0}
-        discount={0}
-      />
+      <h2>3. CSS Modules</h2>
+      <CSSModule />
 
-      <h2>4. Variables for Complex Logic</h2>
-      <VariableDemo orderId={101} status="placed" amount={450} />
-      <VariableDemo orderId={102} status="shipped" amount={750} />
-      <VariableDemo orderId={103} status="delivered" amount={1500} />
-      <VariableDemo orderId={104} status="cancelled" amount={300} />
-      <h1>Tutorial 10 - Rendering Lists</h1>
-
-      <h2>1. Simple List (strings)</h2>
-      <SimpleList />
-
-      <h2>2. List of Objects with a Component</h2>
-      <ProductList />
-
-      <h2>3. Filter, Sort and Empty List</h2>
-      <FilterList />
-
-      <h2>4. Nested List</h2>
-      <NestedList />
-      <h1>Tutorial 11 - Key Anti-patterns</h1>
-      <KeyAntipatternDemo />
+      <h2>4. Conditional / Dynamic Styles</h2>
+      <DynamicStyle />
     </div>
   );
 }
