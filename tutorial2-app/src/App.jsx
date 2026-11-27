@@ -3,7 +3,11 @@ import IfStatementDemo from "./IfStatementDemo";
 import TernaryDemo from "./TernaryDemo";
 import AndOperatorDemo from "./AndOperatorDemo";
 import VariableDemo from "./VariableDemo";
-
+import SimpleList from "./SimpleList";
+import ProductList from "./ProductList";
+import FilterList from "./FilterList";
+import NestedList from "./NestedList";
+import KeyAntipatternDemo from "./KeyAntipatternDemo";
 function App() {
   return (
     <div
@@ -43,6 +47,21 @@ function App() {
       <VariableDemo orderId={102} status="shipped" amount={750} />
       <VariableDemo orderId={103} status="delivered" amount={1500} />
       <VariableDemo orderId={104} status="cancelled" amount={300} />
+      <h1>Tutorial 10 - Rendering Lists</h1>
+
+      <h2>1. Simple List (strings)</h2>
+      <SimpleList />
+
+      <h2>2. List of Objects with a Component</h2>
+      <ProductList />
+
+      <h2>3. Filter, Sort and Empty List</h2>
+      <FilterList />
+
+      <h2>4. Nested List</h2>
+      <NestedList />
+      <h1>Tutorial 11 - Key Anti-patterns</h1>
+      <KeyAntipatternDemo />
     </div>
   );
 }
