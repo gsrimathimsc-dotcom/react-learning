@@ -15,7 +15,7 @@ function App() {
         margin: "0 auto",
       }}
     >
-      <h1>Tutorial 13 - Event Handling</h1>
+      <h1>Tutorial 15 - Event Handling</h1>
 
       <h2>1. Click Events</h2>
       <ClickEvents />
@@ -29,11 +29,10 @@ function App() {
       <h2>4. Form Events</h2>
       <FormEvents />
 
-      <h2>5. Other Events (Copy, Paste, Scroll)</h2>
+      <h2>5. @Other Events@ (Copy, Paste, Scroll)</h2>
       <OtherEvents />
     </div>
   );
 }
 
 export default App;
-
