@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #fff0f6 0%, #fffaf0 100%);
+  min-height: 100vh;
+  color: #4a2c2a;
+}
+
+/* ---------- Header ---------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: linear-gradient(90deg, #ff6f91, #ff9671, #ffc75f);
+  color: white;
+  box-shadow: 0 4px 12px rgba(255, 111, 145, 0.4);
+  position: sticky;
+  top: 0;
+}
+.logo {
+  margin: 0;
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
+}
+.tagline {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.9;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.cart {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.header button {
+  background: white;
+  color: #ff6f91;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------- Banner ---------- */
+.banner {
+  text-align: center;
+  padding: 40px 20px 10px;
+}
+.banner h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 40px;
+  color: #ff6f91;
+  margin: 0;
+}
+.banner p {
+  color: #8d6e63;
+  margin-top: 8px;
+}
+
+.message {
+  text-align: center;
+  color: #8d6e63;
+  font-weight: 600;
+  margin: 12px;
+}
+
+/* ---------- Cake cards ---------- */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+  padding: 30px 20px 50px;
+}
+.card {
+  background: white;
+  width: 230px;
+  padding: 24px 18px;
+  text-align: center;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(255, 111, 145, 0.15);
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 28px rgba(255, 111, 145, 0.3);
+}
+.emoji {
+  font-size: 70px;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff0f6;
+  border-radius: 50%;
+}
+.card h3 {
+  margin: 14px 0 4px;
+}
+.flavour {
+  color: #a1887f;
+  font-size: 14px;
+  margin: 0;
+}
+.price {
+  color: #ff6f91;
+  font-weight: 600;
+  font-size: 22px;
+  margin: 10px 0;
+}
+.card button {
+  background: linear-gradient(90deg, #ff6f91, #ff9671);
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.card button:hover {
+  opacity: 0.85;
+}
+.out-of-stock {
+  display: inline-block;
+  background: #ffebee;
+  color: #e53935;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+}
