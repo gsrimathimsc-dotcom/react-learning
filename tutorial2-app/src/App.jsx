@@ -4,6 +4,8 @@ import SnapshotDemo from "./SnapshotDemo";
 import PrevStateDemo from "./PrevStateDemo";
 import BatchingDemo from "./BatchingDemo";
 import ObjectStateDemo from "./ObjectStateDemo";
+import ArrayStateDemo from "./ArrayStateDemo";
+
 function App() {
   return (
     <div
@@ -26,6 +28,8 @@ function App() {
       <BatchingDemo />
       <h1>Tutorial 24 - useState with Object</h1>
       <ObjectStateDemo />
+      <h1>Tutorial 20 - useState with Arrays</h1>
+      <ArrayStateDemo />
     </div>
   );
 }
