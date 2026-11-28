@@ -1,6 +1,8 @@
 // App.jsx
 import CounterReducer from "./reducer/CounterReducer";
 import CartReducerDemo from "./reducer/CartReducerDemo";
+import SimpleCounter from "./reducer/SimpleCounter";
+import ProductManager from "./productManager/ProductManager";
 
 function App() {
   return (
@@ -19,6 +21,10 @@ function App() {
 
       <h2>2. Shopping Cart with useReducer</h2>
       <CartReducerDemo />
+      <h2>28. Simplest useReducer</h2>
+      <SimpleCounter />
+      <h1>Tutorial 29 - Complex useReducer (Product Manager)</h1>
+      <ProductManager />
     </div>
   );
 }
