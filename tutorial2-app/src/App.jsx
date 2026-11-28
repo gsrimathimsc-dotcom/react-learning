@@ -1,4 +1,5 @@
 import UseStateDemo from "./UseStateDemo";
+import StateUpdateDemo from "./StateUpdateDemo";
 
 function App() {
   return (
@@ -10,8 +11,10 @@ function App() {
         margin: "0 auto",
       }}
     >
-      <h1>Tutorial 14 - useState</h1>
+      <h1>Tutorial 18 - useState</h1>
       <UseStateDemo />
+      <h1>Tutorial 20 - How State Updates Work</h1>
+      <StateUpdateDemo />
     </div>
   );
 }
