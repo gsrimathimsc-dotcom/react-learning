@@ -1,11 +1,6 @@
-import UseStateDemo from "./UseStateDemo";
-import StateUpdateDemo from "./StateUpdateDemo";
-import SnapshotDemo from "./SnapshotDemo";
-import PrevStateDemo from "./PrevStateDemo";
-import BatchingDemo from "./BatchingDemo";
-import ObjectStateDemo from "./ObjectStateDemo";
-import ArrayStateDemo from "./ArrayStateDemo";
-import ShopPage from "./shop/ShopPage";
+// App.jsx
+import CounterReducer from "./reducer/CounterReducer";
+import CartReducerDemo from "./reducer/CartReducerDemo";
 
 function App() {
   return (
@@ -17,22 +12,13 @@ function App() {
         margin: "0 auto",
       }}
     >
-      <h1>Tutorial 18 - useState</h1>
-      <UseStateDemo />
-      <h1>Tutorial 19/ 20 - How State Updates Work</h1>
-      <StateUpdateDemo />
-      <h1>Tutorial 21 - State as a Snapshot</h1>
-      <SnapshotDemo />
-      <h1>Tutorial 22 - setState with Previous State</h1>
-      <PrevStateDemo />
-      <h1>Tutorial 23 - React Batches Updates</h1>
-      <BatchingDemo />
-      <h1>Tutorial 24 - useState with Object</h1>
-      <ObjectStateDemo />
-      <h1>Tutorial 25 - useState with Arrays</h1>
-      <ArrayStateDemo />
-      <h1>Tutorial 26 - Sharing State Between Components</h1>
-      <ShopPage />
+      <h1>Tutorial 27 - useReducer Hook</h1>
+
+      <h2>1. Counter with useReducer</h2>
+      <CounterReducer />
+
+      <h2>2. Shopping Cart with useReducer</h2>
+      <CartReducerDemo />
     </div>
   );
 }
