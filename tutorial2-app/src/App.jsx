@@ -2,6 +2,7 @@ import UseStateDemo from "./UseStateDemo";
 import StateUpdateDemo from "./StateUpdateDemo";
 import SnapshotDemo from "./SnapshotDemo";
 import PrevStateDemo from "./PrevStateDemo";
+import BatchingDemo from "./BatchingDemo";
 function App() {
   return (
     <div
@@ -18,8 +19,10 @@ function App() {
       <StateUpdateDemo />
       <h1>Tutorial 21 - State as a Snapshot</h1>
       <SnapshotDemo />
-      <h1>Tutorial 17 - setState with Previous State</h1>
+      <h1>Tutorial 22 - setState with Previous State</h1>
       <PrevStateDemo />
+      <h1>Tutorial 23 - React Batches Updates</h1>
+      <BatchingDemo />
     </div>
   );
 }
