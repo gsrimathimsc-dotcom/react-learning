@@ -1,5 +1,6 @@
 import UseStateDemo from "./UseStateDemo";
 import StateUpdateDemo from "./StateUpdateDemo";
+import SnapshotDemo from "./SnapshotDemo";
 
 function App() {
   return (
@@ -13,8 +14,10 @@ function App() {
     >
       <h1>Tutorial 18 - useState</h1>
       <UseStateDemo />
-      <h1>Tutorial 20 - How State Updates Work</h1>
+      <h1>Tutorial 19/ 20 - How State Updates Work</h1>
       <StateUpdateDemo />
+      <h1>Tutorial 21 - State as a Snapshot</h1>
+      <SnapshotDemo />
     </div>
   );
 }
