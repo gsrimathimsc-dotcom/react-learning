@@ -5,6 +5,7 @@ import PrevStateDemo from "./PrevStateDemo";
 import BatchingDemo from "./BatchingDemo";
 import ObjectStateDemo from "./ObjectStateDemo";
 import ArrayStateDemo from "./ArrayStateDemo";
+import ShopPage from "./shop/ShopPage";
 
 function App() {
   return (
@@ -28,8 +29,10 @@ function App() {
       <BatchingDemo />
       <h1>Tutorial 24 - useState with Object</h1>
       <ObjectStateDemo />
-      <h1>Tutorial 20 - useState with Arrays</h1>
+      <h1>Tutorial 25 - useState with Arrays</h1>
       <ArrayStateDemo />
+      <h1>Tutorial 26 - Sharing State Between Components</h1>
+      <ShopPage />
     </div>
   );
 }
