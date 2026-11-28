@@ -1,17 +1,17 @@
 // App.jsx
-import CartWithUseState from "./compare/CartWithUseState";
-import CartWithUseReducer from "./compare/CartWithUseReducer";
+import DrillingProblem from "./propDrilling/DrillingProblem";
+import ContextSolution from "./propDrilling/ContextSolution";
 
 function App() {
   return (
-    <div style={{ fontFamily: "Arial", padding: "20px", maxWidth: "1000px", margin: "0 auto" }}>
-      <h1>Tutorial 31 - useState vs useReducer</h1>
-      <p>Both carts look and work the same. Only the code inside is different.</p>
+    <div style={{ fontFamily: "Arial", padding: "20px", maxWidth: "800px", margin: "0 auto" }}>
+      <h1>Tutorial 26 - Prop Drilling Problem</h1>
 
-      <div style={{ display: "flex", gap: "20px", flexWrap: "wrap" }}>
-        <CartWithUseState />
-        <CartWithUseReducer />
-      </div>
+      <h2 style={{ color: "red" }}>❌ Problem: Prop Drilling</h2>
+      <DrillingProblem />
+
+      <h2 style={{ color: "green", marginTop: "30px" }}>✅ Solution: useContext</h2>
+      <ContextSolution />
     </div>
   );
 }
